@@ -1,0 +1,63 @@
+body {
+    background: url(img/cielo.jpg);
+    background-attachment: fixed;
+}
+
+#logo {
+    background: #1a549d;
+    border: 2px solid #1a549d;
+}
+
+#logo:hover {
+    background: white;
+    border: 2px solid #1a549d;
+}
+
+#logo:hover a {
+    color: #1a549d;
+}
+
+.subir {
+    background: #1a549d;
+}
+
+.btn {
+    background: #1a549d;
+    border: 1px solid #1a549d;
+}
+
+.btn:hover {
+    color: #1a549d;
+    border: 1px solid #1a549d;
+}
+
+#acordeon > h3 {
+    background-color: #1a549d;
+    border: #1a549d;
+}
+
+#reloj {
+    animation-name: watch-border;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes watch-border {
+    0% {
+        border: 3px solid black;
+    }
+    50% {
+        border: 3px solid #1a549d;
+    }
+    100% {
+        border: 3px solid black;
+    }
+}
+
+.input .lbl::after {
+    border-bottom: 3px solid #1a549d;
+}
+
+footer {
+    background: #1a549d;
+}

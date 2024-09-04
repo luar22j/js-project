@@ -1,0 +1,63 @@
+body {
+    background: url(img/hojas.jpg);
+    background-attachment: fixed;
+}
+
+#logo {
+    background: #185700;
+    border: 2px solid #185700;
+}
+
+#logo:hover {
+    background: white;
+    border: 2px solid #185700;
+}
+
+#logo:hover a {
+    color: #185700;
+}
+
+.subir {
+    background: #185700;
+}
+
+.btn {
+    background: #185700;
+    border: 1px solid #185700;
+}
+
+.btn:hover {
+    color: #185700;
+    border: 1px solid #185700;
+}
+
+#acordeon > h3 {
+    background-color: #185700;
+    border: #185700;
+}
+
+#reloj {
+    animation-name: watch-border;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes watch-border {
+    0% {
+        border: 3px solid black;
+    }
+    50% {
+        border: 3px solid #185700;
+    }
+    100% {
+        border: 3px solid black;
+    }
+}
+
+.input .lbl::after {
+    border-bottom: 3px solid #185700;
+}
+
+footer {
+    background: #185700;
+}

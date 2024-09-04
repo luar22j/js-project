@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mi</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.js"></script>
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <!-- Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+    <script type="text/JavaScript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="temas">
+        <div id="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+
+        <svg id="svg" width="40" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 15L12 22L19 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <a href="#" class="subir">
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M12 4V20M12 4L8 8M12 4L16 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </a>
+
+    <section id="global">
+        <!-- Cabecera -->
+        <header>
+            <div id="logo">
+                <h1><a href="#">Proyecto JS</a></h1>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <div id="slider">
+            <div class="galeria">
+                <div><img src="css/img/hojas.jpg" title="Hojas"></div>
+                <div><img src="css/img/rojo.jpg" title="Rojo"></div>
+                <div><img src="css/img/cielo.jpg" title="Cielo"></div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <section id="content">
+            <div id="box" class="contact-box">
+                <h2>Contacto</h2>
+
+                <form action="" method="post" id="form_contact">
+                    <div class="input">
+                        <input type="text" id="form_name" name="name" data-validation="alphanumeric" required>
+                        <label for="name" class="lbl">
+                            <span class="text">Nombre <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" id="form_name" name="surname" data-validation="alphanumeric" required>
+                        <label for="surname" class="lbl">
+                            <span class="text">Apellidos <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="email" data-validation="email" required>
+                        <label for="email" class="lbl">
+                            <span class="text">Correo electrónico <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <div class="input sex-input">
+                        <label for="sex" id="sex-lbl">Sexo <span class="required">*</span></label>
+                        <select name="sex" id="sex-select" data-validation="required" required>
+                            <option selected disabled>Seleccione el sexo</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yy" required>
+                        <label class="lbl">
+                            <span class="text">Fecha de nacimiento <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <input type="submit" class="btn" value="Enviar">
+                </form>
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4 class="margin">¿Quién soy?</h4>
+                    <img src="css/img/caracol.jpg" alt="Caracol">
+                    <p>
+                        Cras dictum, diam eu sagittis congue, ligula mi
+                        malesuada quam, aliquet sodales purus velit id sapien. Donec accumsan elit quis odio porttitor
+                        molestie.
+                    </p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identifícate</span></h4>
+                    <form id="login_form">
+                        <div class="input">
+                            <input type="text" id="form_name" required>
+                            <label class="lbl">
+                                <span class="text">Nombre</span>
+                            </label>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" required>
+                            <label class="lbl">
+                                <span class="text">Correo electrónico</span>
+                            </label>
+                        </div>
+
+                        <div class="input">
+                            <input type="password" required>
+                            <label class="lbl">
+                                <span class="text">Contraseña</span>
+                            </label>
+                        </div>
+
+                        <input type="submit" class="btn" value="Enviar">
+                    </form>
+                </div>
+            </aside>
+        </section>
+    </section>
+
+    <footer>
+        Máster en JavaScript
+    </footer>
+</body>
+</html>

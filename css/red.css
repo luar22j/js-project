@@ -1,0 +1,63 @@
+body {
+    background: url(img/rojo.jpg);
+    background-attachment: fixed;
+}
+
+#logo {
+    background: #c02f1e;
+    border: 2px solid #c02f1e;
+}
+
+#logo:hover {
+    background: white;
+    border: 2px solid #c02f1e;
+}
+
+#logo:hover a {
+    color: #c02f1e;
+}
+
+.subir {
+    background: #c02f1e;
+}
+
+.btn {
+    background: #c02f1e;
+    border: 1px solid #c02f1e;
+}
+
+.btn:hover {
+    color: #c02f1e;
+    border: 1px solid #c02f1e;
+}
+
+#acordeon > h3 {
+    background-color: #c02f1e;
+    border: #c02f1e;
+}
+
+#reloj {
+    animation-name: watch-border;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes watch-border {
+    0% {
+        border: 3px solid black;
+    }
+    50% {
+        border: 3px solid #c02f1e;
+    }
+    100% {
+        border: 3px solid black;
+    }
+}
+
+.input .lbl::after {
+    border-bottom: 3px solid #c02f1e;
+}
+
+footer {
+    background: #c02f1e;
+}
